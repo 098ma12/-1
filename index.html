@@ -1,0 +1,45 @@
+ <!DOCTYPE html>
+    <html lang="ja">
+      <head>
+        <meta charset="utf-8">
+        <title>サイト模写</title>
+        <link rel="stylesheet" href="style.css">
+        
+   　<tittle>JQuery</tittle>
+      </head>
+      <body>
+  <div class="wrapper">
+    <div class="search-area">
+      <form>
+        <input type="text" id="search-text" placeholder="検索ワードを入力">
+      </form>
+      <div class="search-result">
+        <div class="search-result__hit-num"></div>
+        <div id="search-result__list"></div>
+      </div>
+    </div>
+      
+      <ul class="target-area">
+      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMtCxpV8Ye49Jfjpv6fgFmXn9xTsxMsb4qiA&usqp=CAU"alt=""></img>
+                    <p>キーワード</p>
+                    <p class="image-element-text">animal　dog inu 動物　犬　いぬ　イヌ</p></li>
+      <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjtjCmULq8MhoHnyHhUzoVjS5It0ca0Bz82w&usqp=CAU"alt=""></img>
+                    <p>キーワード</p>
+                    <p class="image-element-text">animal　cat neko　動物　猫　ねこ　ネコ</p></li>
+      <li><img src="data:image/jpeg;base64,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"alt=""></img>
+                    <p>キーワード</p>
+                    <p class="image-element-text">view Mtfuji fujisan 景色　富士山</p></li>
+      <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWQ-_4U7FQahZKkDzB3KziLuW8NsyyjrjaA&usqp=CAU"alt=""></img>
+                    <p>キーワード</p>
+                    <p class="image-element-text">view Cherry blossoms sakura　景色　桜</p></li>
+    </ul>
+
+  
+    
+      
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+
+    </body>
+    </html>
